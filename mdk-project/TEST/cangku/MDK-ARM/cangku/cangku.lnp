@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"cangku\startup_stm32f103xe.o"
+"cangku\main.o"
+"cangku\stm32f1xx_it.o"
+"cangku\stm32f1xx_hal_msp.o"
+"cangku\config.o"
+"cangku\e_flash.o"
+"cangku\stm32f1xx_hal_gpio_ex.o"
+"cangku\stm32f1xx_hal_iwdg.o"
+"cangku\stm32f1xx_hal_tim.o"
+"cangku\stm32f1xx_hal_tim_ex.o"
+"cangku\stm32f1xx_hal_uart.o"
+"cangku\stm32f1xx_hal.o"
+"cangku\stm32f1xx_hal_rcc.o"
+"cangku\stm32f1xx_hal_rcc_ex.o"
+"cangku\stm32f1xx_hal_gpio.o"
+"cangku\stm32f1xx_hal_dma.o"
+"cangku\stm32f1xx_hal_cortex.o"
+"cangku\stm32f1xx_hal_pwr.o"
+"cangku\stm32f1xx_hal_flash.o"
+"cangku\stm32f1xx_hal_flash_ex.o"
+"cangku\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "cangku\cangku.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "cangku.map" -o cangku\cangku.axf
